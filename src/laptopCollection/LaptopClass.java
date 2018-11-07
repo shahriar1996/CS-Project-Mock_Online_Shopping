@@ -62,6 +62,7 @@ public class LaptopClass extends JFrame implements ActionListener{
 	 * Parameter: It does not take a parameter.
 	 * Precondition: Has to pass the name of the JFrame.
 	 * Postcondition: Will output the whole frame.
+	 * Throws:
 	 */
 	public LaptopClass() {
 		

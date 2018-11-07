@@ -20,10 +20,10 @@ public class iPhone extends JFrame implements ActionListener{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-		
+	
+	// Instance variables for iPhoneClass
 	private JPanel headerPanel = new JPanel (new FlowLayout());
 	private JLabel companyHeaderLbl = new JLabel("AMA Online Shopping", SwingConstants.CENTER);
-	
 	
 	private JPanel panel = new JPanel(new BorderLayout());
 	private JPanel iPhonePanel = new JPanel(new FlowLayout());

@@ -38,7 +38,7 @@ public class ShoppingCart extends JFrame implements ActionListener{
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	// Initial variables for homepage.
+	// Initial variables for Homepage.
 	private JMenu optionsMenu = new JMenu("Home");
 	private JMenu ProductMenu = new JMenu("Products");
 	private JMenuItem m1 = new JMenuItem("Phone");
@@ -69,6 +69,7 @@ public class ShoppingCart extends JFrame implements ActionListener{
 	 * Parameter: It takes a parameter type string.
 	 * Precondition: Has to pass the name of the JFrame.
 	 * Postcondition: Will output the whole frame.
+	 * Throws:
 	 */
 	public ShoppingCart(String title) {
 		
