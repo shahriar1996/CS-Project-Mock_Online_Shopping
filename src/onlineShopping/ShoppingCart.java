@@ -51,6 +51,9 @@ public class ShoppingCart extends JFrame implements ActionListener{
 	
 	private JLabel companyHeaderLbl = new JLabel("AMA Online Shopping");
 
+	/*
+	 * Constructor for ShoppingCart
+	 */
 	public ShoppingCart(String title) {
 		
 		setTitle(title);

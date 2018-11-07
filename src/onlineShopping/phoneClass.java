@@ -27,7 +27,7 @@ public class phoneClass extends JFrame implements ActionListener{
 	private JPanel optionPanel = new JPanel (new FlowLayout(FlowLayout.CENTER));
 	
 	private JLabel companyHeaderLbl = new JLabel("AMA Online Shopping");
-	private JLabel pickOptionLbl = new JLabel("***PICK WHICH PHONE YOU WANT TO SHOP FROM US***", SwingConstants.CENTER);
+	private JLabel pickOptionLbl = new JLabel("***PICK WHICH PHONE YOU WANT TO BUY FROM US***", SwingConstants.CENTER);
 	
 	private JButton iPhoneBtn = new JButton();
 	private JButton samsungBtn = new JButton();
