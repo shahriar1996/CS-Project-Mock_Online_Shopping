@@ -19,6 +19,7 @@ public class iPhone extends JFrame implements ActionListener{
 	/**
 	 * 
 	 */
+	//test
 	private static final long serialVersionUID = 1L;
 	
 	// Instance variables for iPhoneClass
