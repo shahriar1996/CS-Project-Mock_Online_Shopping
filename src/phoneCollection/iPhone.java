@@ -87,7 +87,7 @@ public class iPhone extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent callingObj) {
 		Object obj = callingObj.getSource();
 		if(obj.equals(iPhone8Btn)) {
-			iPhone iphone = new iPhone();
+			iPhone8 iphone8 = new iPhone8();
 		}
 	}
 }
