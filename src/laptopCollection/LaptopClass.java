@@ -51,7 +51,7 @@ public class LaptopClass extends JFrame implements ActionListener{
 	private JLabel dellLbl = new JLabel("DELL", SwingConstants.CENTER);
 	
 	private JLabel companyHeaderLbl = new JLabel("AMA Online Shopping", SwingConstants.CENTER);
-	private JLabel pickOptionLbl = new JLabel("***PICK WHICH PHONE YOU WANT TO SHOP FROM US***", SwingConstants.CENTER);
+	private JLabel pickOptionLbl = new JLabel("***PICK WHICH LAPTOP YOU WANT TO SHOP FROM US***", SwingConstants.CENTER);
 	
 	private JButton macBtn = new JButton();
 	private JButton hpBtn = new JButton();
@@ -94,7 +94,7 @@ public class LaptopClass extends JFrame implements ActionListener{
 	public void addComponentsToPanels() {
 		
 		headerPanel.add(companyHeaderLbl);
-		companyHeaderLbl.setFont(new Font("AMA Online Shopping", Font.ROMAN_BASELINE,20));
+		companyHeaderLbl.setFont(new Font("", Font.ROMAN_BASELINE,20));
 		companyHeaderLbl.setForeground(Color.BLACK);
 		
 		macPanel.add(macBtn, BorderLayout.CENTER);
@@ -116,7 +116,7 @@ public class LaptopClass extends JFrame implements ActionListener{
 
 		
 		optionPanel.add(pickOptionLbl);
-		pickOptionLbl.setFont(new Font("***PICK WHICH PHONE YOU WANT TO SHOP FROM US***", Font.ITALIC,15));
+		pickOptionLbl.setFont(new Font("", Font.ITALIC,15));
 		pickOptionLbl.setForeground(Color.RED);
 		
 		

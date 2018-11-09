@@ -98,7 +98,7 @@ public class phoneClass extends JFrame implements ActionListener{
 	 */
 	public void addComponentsToPanels() {
 		headerPanel.add(companyHeaderLbl);
-		companyHeaderLbl.setFont(new Font("AMA Online Shopping", Font.ROMAN_BASELINE,20));
+		companyHeaderLbl.setFont(new Font("", Font.ROMAN_BASELINE,20));
 		companyHeaderLbl.setForeground(Color.BLACK);
 		
 		iphonePanel.add(iPhoneBtn, BorderLayout.CENTER);
@@ -124,7 +124,7 @@ public class phoneClass extends JFrame implements ActionListener{
 
 		
 		optionPanel.add(pickOptionLbl);
-		pickOptionLbl.setFont(new Font("***PICK WHICH PHONE YOU WANT TO SHOP FROM US***", Font.ITALIC,15));
+		pickOptionLbl.setFont(new Font("", Font.ITALIC,15));
 		pickOptionLbl.setForeground(Color.RED);
 		
 		

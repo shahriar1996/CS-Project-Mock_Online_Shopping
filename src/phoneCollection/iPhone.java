@@ -32,6 +32,8 @@ public class iPhone extends JFrame implements ActionListener{
 	private JButton iPhoneXBtn = new JButton();
 	private JButton iPhoneXSBtn = new JButton();
 	private JButton iPhoneXrBtn = new JButton();
+	
+	
 
 	public iPhone() {
 		
@@ -82,8 +84,10 @@ public class iPhone extends JFrame implements ActionListener{
 	}
 
 	@Override
-	public void actionPerformed(ActionEvent e) {
-		
+	public void actionPerformed(ActionEvent callingObj) {
+		Object obj = callingObj.getSource();
+		if(obj.equals(iPhone8Btn)) {
+			iPhone iphone = new iPhone();
+		}
 	}
-
 }

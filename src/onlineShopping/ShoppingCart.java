@@ -120,7 +120,7 @@ public class ShoppingCart extends JFrame implements ActionListener{
 	public void addComponentsToPanels() {
 		
 		headerPanel.add(companyHeaderLbl);
-		companyHeaderLbl.setFont(new Font("AMA Online Shopping", Font.ROMAN_BASELINE,20));
+		companyHeaderLbl.setFont(new Font("", Font.ROMAN_BASELINE,20));
 		companyHeaderLbl.setForeground(Color.BLACK);
 		
 		searchPanel.add(searchTxtF);
