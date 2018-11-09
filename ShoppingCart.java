@@ -57,9 +57,9 @@ public class ShoppingCart extends JFrame implements ActionListener{
 	private JTextField searchTxtF = new JTextField (45);
 	
 	private JButton searchBtn = new JButton ("Search");
-	private JButton phoneBtn = new JButton();
-	private JButton laptopBtn = new JButton();
-	private JButton acsBtn = new JButton();
+	private JButton phoneBtn = new JButton("Phones");
+	private JButton laptopBtn = new JButton("Laptops");
+	private JButton acsBtn = new JButton("Accessories");
 	
 	private JLabel companyHeaderLbl = new JLabel("AMA Online Shopping");
 
