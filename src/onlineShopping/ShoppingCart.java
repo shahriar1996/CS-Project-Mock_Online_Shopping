@@ -103,7 +103,7 @@ public class ShoppingCart extends JFrame implements ActionListener{
 	 * Precondition: When the method is called it adds all the components
 	 * to the frame.
 	 * Postcondition: It output the design of the frame.
-	 * Throws:
+	 * Throws: It does not throw any exception
 	 */
 	public void addPanelsToFrame() {
 		add(panel2);
