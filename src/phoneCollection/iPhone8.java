@@ -12,6 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JToggleButton;
 import javax.swing.SwingConstants;
 
 public class iPhone8 extends JFrame implements ActionListener{
@@ -24,9 +25,9 @@ public class iPhone8 extends JFrame implements ActionListener{
 	// "<html>Welcome, Admin <br/>to Car Tooner", SwingConstants.CENTER
 	
 	private JLabel companyHeaderLbl = new JLabel("AMA Online Shopping", SwingConstants.CENTER);
-	private JLabel iphone8Lbl = new JLabel("");
+	private JLabel iphone8Lbl = new JLabel();
 	private JLabel colorLbl = new JLabel("Color");
-	private JLabel ramLbl = new JLabel("RAM");
+	private JLabel ramLbl = new JLabel("Size");
 	private JLabel description = new JLabel("<html>*4.7-Inch (diagonal) widescreen LCD multi-touch display with IPS <br/>technology and Retina HD display "
 			+ "<br/> *Splash, water, and dust resistant"
 			+ "<br/> *12MP camera with Optical image stabilization and Six-element lens"
@@ -42,27 +43,51 @@ public class iPhone8 extends JFrame implements ActionListener{
 	private JPanel namePanel = new JPanel(new BorderLayout());
 	private JLabel iphoneLbl = new JLabel("iPhone 8", SwingConstants.CENTER);
 	
+	private JLabel productLbl = new JLabel("Product: ");
+	private JLabel productFillLbl = new JLabel("iPhone 8");
+	private JPanel productPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+	
+	private JLabel colorLabel = new JLabel("Color: ");
+	private JLabel colorFillLbl = new JLabel();
+	private JPanel colorPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+	
+	private JLabel romLabel = new JLabel("Size: ");
+	private JLabel romFillLbl = new JLabel();
+	private JPanel romPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+	
+	private JLabel pricelLbl = new JLabel("Price: ");
+	private JLabel priceFillLbl = new JLabel();
+	private JPanel pricePanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+	
+	private JPanel panelX = new JPanel(new BorderLayout());
+	private JPanel panelY = new JPanel(new BorderLayout());
+	private JPanel panelZ = new JPanel(new BorderLayout());
+	private JPanel boxPanel = new JPanel(new BorderLayout());
+	
 	private JPanel colorBtnPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
 	private JPanel ramBtnPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
 	private JPanel descrPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+	private JPanel addCart = new JPanel(new FlowLayout(FlowLayout.LEFT));
 	
-	private JPanel panel = new JPanel (new BorderLayout());
 	private JPanel panel1 = new JPanel (new BorderLayout());
 	private JPanel panel2 = new JPanel (new BorderLayout());
 	private JPanel panel3 = new JPanel (new BorderLayout());
 	private JPanel panel4 = new JPanel (new BorderLayout());
+	private JPanel panel5 = new JPanel (new BorderLayout());
+	private JPanel panel6 = new JPanel (new BorderLayout());
 	
-	private JButton redColorBtn = new JButton("R");
-	private JButton goldColorBtn = new JButton("G");
-	private JButton silverColorBtn = new JButton("S");
-	private JButton whiteColorBtn = new JButton("W");
+	private JToggleButton redColorBtn = new JToggleButton("R");
+	private JToggleButton goldColorBtn = new JToggleButton("G");
+	private JToggleButton silverColorBtn = new JToggleButton("S");
+	private JToggleButton whiteColorBtn = new JToggleButton("w");
 	
-	private JButton ram1 = new JButton("64");
-	private JButton ram2 = new JButton("128");
+	private JToggleButton rom1 = new JToggleButton("64");
+	private JToggleButton rom2 = new JToggleButton("128");
 
+	private JButton add2Cart = new JButton("Add to Cart");
 	
 	public iPhone8() {
-		
+	
 		iphone8Lbl.setIcon(new ImageIcon("iphone8.png"));
 		iphone8Lbl.setBackground(Color.LIGHT_GRAY);
 		
@@ -81,12 +106,14 @@ public class iPhone8 extends JFrame implements ActionListener{
 		silverColorBtn.addActionListener(this);		
 		whiteColorBtn.addActionListener(this);
 		
-		ram1.addActionListener(this);
-		ram2.addActionListener(this);
+		rom1.addActionListener(this);
+		rom2.addActionListener(this);
+		
+		add2Cart.addActionListener(this);
 	}
 
 	private void addPanelsToFrame() {
-		add(panel4);
+		add(panel6);
 	}
 
 	private void addComponentsToPanels() {
@@ -98,10 +125,7 @@ public class iPhone8 extends JFrame implements ActionListener{
 		namePanel.add(iphoneLbl);
 		iphoneLbl.setFont(new Font("iPhone 8", Font.BOLD, 15));
 		iphoneLbl.setForeground(Color.ORANGE);
-		
-		panel.add(iPhone8Panel, BorderLayout.CENTER);
-		panel.add(namePanel, BorderLayout.NORTH);
-		
+	
 		colorBtnPanel.add(colorLbl);
 		colorBtnPanel.add(redColorBtn);
 		colorBtnPanel.add(goldColorBtn);
@@ -109,28 +133,65 @@ public class iPhone8 extends JFrame implements ActionListener{
 		colorBtnPanel.add(whiteColorBtn);
 		
 		ramBtnPanel.add(ramLbl);
-		ramBtnPanel.add(ram1);
-		ramBtnPanel.add(ram2);
+		ramBtnPanel.add(rom1);
+		ramBtnPanel.add(rom2);
 		
 		descrPanel.add(description);
 		
-		panel1.add(colorBtnPanel, BorderLayout.NORTH);
-		panel1.add(ramBtnPanel, BorderLayout.CENTER);
+		productPanel.add(productLbl);
+		productPanel.add(productFillLbl);
 		
-		panel2.add(panel1, BorderLayout.NORTH);
-		panel2.add(descrPanel, BorderLayout.CENTER);
+		colorPanel.add(colorLabel);
+		colorPanel.add(colorFillLbl);
 		
-		panel3.add(panel, BorderLayout.WEST);
-		panel3.add(panel2, BorderLayout.CENTER);
+		romPanel.add(romLabel);
+		romPanel.add(romFillLbl);
 		
-		panel4.add(headerPanel, BorderLayout.NORTH);
+		pricePanel.add(pricelLbl);
+		pricePanel.add(priceFillLbl);
+		
+		panelX.add(productPanel, BorderLayout.NORTH);
+		panelX.add(colorPanel, BorderLayout.CENTER);
+		
+		panelY.add(panelX, BorderLayout.NORTH);
+		panelY.add(romPanel, BorderLayout.CENTER);
+		
+		panelZ.add(panelY, BorderLayout.NORTH);
+		panelZ.add(pricePanel, BorderLayout.CENTER);
+		
+		addCart.add(add2Cart);
+		
+		boxPanel.add(panelZ, BorderLayout.NORTH);
+		boxPanel.add(addCart, BorderLayout.CENTER);
+		
+		panel1.add(iPhone8Panel, BorderLayout.CENTER);
+		panel1.add(namePanel, BorderLayout.NORTH);
+		
+		panel2.add(colorBtnPanel, BorderLayout.NORTH);
+		panel2.add(ramBtnPanel, BorderLayout.CENTER);
+		
+		panel3.add(panel2, BorderLayout.NORTH);
+		panel3.add(descrPanel, BorderLayout.CENTER);
+		
+		panel4.add(panel1, BorderLayout.WEST);
 		panel4.add(panel3, BorderLayout.CENTER);
+		
+		panel5.add(panel4, BorderLayout.WEST);
+		panel5.add(boxPanel, BorderLayout.CENTER);
+		
+		panel6.add(headerPanel, BorderLayout.NORTH);
+		panel6.add(panel5, BorderLayout.CENTER);
 	}
 
+
 	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
+	public void actionPerformed(ActionEvent callingObj) {
+		Object obj = callingObj.getSource();
+		if(obj.equals(rom1)) {
+			priceFillLbl.setText("$699.99");
+		}else if(obj.equals(rom2)) {
+			priceFillLbl.setText("$899.99");
+		}
 	}
 
 }
