@@ -188,9 +188,19 @@ public class iPhone8 extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent callingObj) {
 		Object obj = callingObj.getSource();
 		if(obj.equals(rom1)) {
+			romFillLbl.setText("64");
 			priceFillLbl.setText("$699.99");
 		}else if(obj.equals(rom2)) {
+			romFillLbl.setText("128");
 			priceFillLbl.setText("$899.99");
+		}else if(obj.equals(redColorBtn)) {
+			colorFillLbl.setText("Red");
+		}else if(obj.equals(goldColorBtn)) {
+			colorFillLbl.setText("Gold");
+		}else if(obj.equals(silverColorBtn)) {
+			colorFillLbl.setText("Silver");
+		}else if(obj.equals(whiteColorBtn)) {
+			colorFillLbl.setText("White");
 		}
 	}
 
