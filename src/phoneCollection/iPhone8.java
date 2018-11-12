@@ -22,7 +22,7 @@ public class iPhone8 extends JFrame implements ActionListener{
 	 */
 	private static final long serialVersionUID = 1L;
 
-	// "<html>Welcome, Admin <br/>to Car Tooner", SwingConstants.CENTER
+	// How to break lines: "<html>Welcome, Admin <br/>to Car Tooner", SwingConstants.CENTER
 	
 	private JLabel companyHeaderLbl = new JLabel("AMA Online Shopping", SwingConstants.CENTER);
 	private JLabel iphone8Lbl = new JLabel();
