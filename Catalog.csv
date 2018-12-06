@@ -1,0 +1,8 @@
+Name,Description,imagePath,color,size,quantity,price,availableDate,subCategory Name
+Apple iphone 8,Apple iPhone 8 GSM Unlocked,iphone8.png,Red/white/black,64 GB,15,699.99,Dec 11,Apple iPhones
+Apple iPhone X,Apple iPhone X GSM Unlocked,iphoneX.png,Red/white/black,64 GB,15,999.99,Dec 11,Apple iPhones
+Apple iPhone XS,Apple iPhone XS GSM Unlocked,iphoneXS.png,Red/white/black,64 GB,15,1100.99,Dec 11,Apple iPhones
+Apple iPhone XR,Apple iPhone XR GSM Unlocked,iphoneXR.png,Red/white/black,64 GB,15,799.99,Dec 11,Apple iPhones
+Samsung Galaxy S9,Samsung Galaxy S9 Unlocked,samsung.png,Red/white/black,64 GB,15,1000,Nov 30,Samsung Phones
+Motorola x4,Motorola x4 Unlocked,moto.png,Red/white/black,64 GB,15,400,Nov 30,Motorola Phones
+HTC one,HTC one Unlocked,htc.png,Red/white/black,64 GB,15,400,Nov 30,Htc Phones
