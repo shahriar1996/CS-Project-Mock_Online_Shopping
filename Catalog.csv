@@ -15,31 +15,15 @@ HTC One M9,HTC One M9 Unlocked <br/>  RAM: 2 GB  SIZE: 32 GB <br/>,htc.png,Red/w
 HTC One M8,HTC One M8 Unlocked <br/>  RAM: 3 GB  SIZE: 32 GB <br/>,htc1.png,Red/white/black,65 GB,15,99.99,1-Dec,Htc Phones
 HTC Desire,HTC Desire Unlocked <br/>  RAM: 2 GB  SIZE: 16 GB <br/>,htc2.png,Red/white/black,66 GB,15,249.99,2-Dec,Htc Phones
 HTC Desire Eye E1,Desire Eye E1 Unlocked <br/>  RAM: 3 GB  SIZE: 128 GB <br/>,htc3.png,Red/white/black,67 GB,15,169.99,3-Dec,Htc Phones
-Lenovo IdeaPad,Description,htc.png,htc.png,4.0GB,300,309.99,1-Dec,Laptop/Notebook
-Lenovo IdeaPad,Description,Description,htc.png,4.0GB,278,309.99,2-Dec,Laptop/Notebook
-DellInspirion,Description,htc.png,black,4.0GB,198,319.99,3-Dec,Laptop/Notebook
-DellInspirion,Description,htc.png,black,4.0GB,297,319.99,4-Dec,Laptop/Notebook
-AsusChromebook,Description,htc.png,black,1TB,135,537.99,5-Dec,Laptop/Notebook
-AsusChromebook,Description,htc.png,black,1TB,147,537.99,6-Dec,Laptop/Notebook
-AsusVivobook,Description,htc.png,black,1TB,165,619.99,7-Dec,Laptop/Notebook
-AsusVivobook,Description,htc.png,black,1TB,147,319.99,8-Dec,Laptop/Notebook
-HPPavilion,Description,htc.png,black,4.0GB,300,317.99,9-Dec,Laptop/Notebook
-HPPavilion,Description,htc.png,black,4.0GB,164,317.99,10-Dec,Laptop/Notebook
-HPFlagship,Description,htc.png,black,8.0GB,124,319.99,11-Dec,Laptop/Notebook
-HPFlagship,Description,htc.png,black,8.0GB,247,319.99,12-Dec,Laptop/Notebook
-HPNotebook,Description,htc.png,black,2.0TB,368,549.42,13-Dec,Laptop/Notebook
-HPNotebook,Description,htc.png,black,2.0TB,410,549.42,14-Dec,Laptop/Notebook
-LogitechK840MechanicalUSBKeyboard,Description,htc.png,black,17.5incheswide,40,56.99,15-Dec,Accessories
-LogitechK840MechanicalUSBKeyboard,Description,htc.png,black,17.5incheswide,32,56.99,16-Dec,Accessories
-MicrosoftSurfaceErgonomicKeyboard,Description,htc.png,black,9.02incheswide,20,45.99,17-Dec,Accessories
-MicrosoftSurfaceErgonomicKeyboard,Description,htc.png,black,9.02incheswide,11,45.99,18-Dec,Accessories
-LogitechM325WirelessOpticalMouse,Description,htc.png,black,1.6ounces,23,8.99,19-Dec,Accessories
-LogitechM325WirelessOpticalMouse,Description,htc.png,black,1.6ounces,22,8.99,20-Dec,Accessories
-InsigniaWiredOpticalMouse,Description,htc.png,black,1.4ounces,15,7.99,21-Dec,Accessories
-InsigniaWiredOpticalMouse,Description,htc.png,black,1.4ounces,3,7.99,22-Dec,Accessories
-InsigniaWiredOpticalMouse,Description,htc.png,black,1.4ounces,13,7.99,23-Dec,Accessories
-SanDiskUltra256GBUSB3.0TypeAFlashDrive,Description,htc.png,black,256GB,20,40.99,24-Dec,Accessories
-SanDiskCruzerGlide128GBUSB2.0FlashDrive,Description,htc.png,black,128GB,10,19.99,25-Dec,Accessories
-SanDiskUltra128GBUSB3.1FlashDrive,Description,htc.png,black,128Gb,6,119.99,26-Dec,Accessories
-SanDiskUltra128GBUSB3.1FlashDrive,Description,htc.png,black,128Gb,8,119.99,27-Dec,Accessories
-PNYAttaché128GBUSB2.0FlashDrive,Description,htc.png,black,128GB,29,19.99,28-Dec,Accessories
+MacBook Air 13',13' Inch Retina display <br/> 1.6 GHz dual core intel core i5 <br/>,mac.png,Red/white/black,4.0GB,10,1069.99,1-Dec,Apple Laptop
+MacBook Pro,15' Inch Retina display <br/> 2.2 GHz dual core intel core i7 <br/>,mac1.png,Red/white/black,4.0GB,10,899.99,2-Dec,Apple Laptop
+MacBook Air 13',15' Inch Retina display <br/> 2.9 GHz dual core intel core i9 <br/>,mac2.png,Red/white/black,4.0GB,10,3045.69,3-Dec,Apple Laptop
+Dell XPS 15 2 in 1,15' Inch Retina display <br/> 2.2 GHz dual core intel core i5 <br/>,dell.png,Red/white/black,4.0GB,10,1299.99,4-Dec,Dell Laptop
+Dell Inspiron 1700,14' Inch Retina display <br/> 2.2 GHz dual core intel core i7 <br/>,dell1.png,Red/white/black,4.0GB,10,799.99,5-Dec,Dell Laptop
+Dell XPS 15,15' Inch Retina display <br/> 2.4 GHz dual core intel core i7 <br/>,dell2.png,Red/white/black,4.0GB,10,1369.99,6-Dec,Dell Laptop
+HP Spectre,15' Inch Touchscreen display <br/> 2.6 GHz dual core intel core i7 <br/>,hp.png,Red/white/black,4.0GB,10,1249.99,7-Dec,HP Laptop
+HP Envy,15' Inch Retina  display <br/> 2.4 GHz dual core intel core i5 <br/>,hp1.png,Red/white/black,4.0GB,10,749.99,8-Dec,HP Laptop
+HP Pavillion,15' Inch Retina display <br/> 3.1 GHz dual core intel core i3 <br/>,hp2.png,Red/white/black,4.0GB,10,549.99,9-Dec,HP Laptop
+Flash Drive,Enfrain 16 GB Flash Drive 2 Packs,acs1.png,Red/white/black,4.0GB,40,10.99,15-Dec,Accessories
+Headphone,COWIN E7 Active <br/> Noise Cancelling Headphone <br/>,acs2.png,Red/white/black,4.0GB,40,59.99,16-Dec,Accessories
+Mouse,2.4G Ergonomic Wireless Mouse <br/> with USB Nano Receiver for laptop <br/>,acs3.png,Red/white/black,4.0GB,40,19.99,17-Dec,Accessories
