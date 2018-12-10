@@ -19,11 +19,13 @@ import edu.century.finalproject.shoppingcart.collections.ArrayBag;
 public class Category
 {
 
+	// Instance variables
     private String name;
     private String description;
     private String imagePath;
     private ArrayBag<SubCategory> subcategoryBag = new ArrayBag<>();
 
+    // Overloaded Constructor
     public Category(String name, String description, String imagePath)
     {
         super();
@@ -31,7 +33,8 @@ public class Category
         this.description = description;
         this.imagePath = imagePath;
     }
-
+    
+    // Getters and setters
     public String getName()
     {
         return name;

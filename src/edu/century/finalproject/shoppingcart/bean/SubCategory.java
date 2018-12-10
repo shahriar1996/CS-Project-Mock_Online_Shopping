@@ -17,11 +17,13 @@ package edu.century.finalproject.shoppingcart.bean;
 import edu.century.finalproject.shoppingcart.collections.ArrayBag;
 
 public class SubCategory {
+	// Instace Variables
 	private String name;
 	private String description;
 	private String imagePath;
 	private ArrayBag<Catalog> catalogBag = new ArrayBag<>();
 
+	// Overloaded constructor
 	public SubCategory(String name, String description, String imagePath) {
 		super();
 		this.name = name;
@@ -29,6 +31,7 @@ public class SubCategory {
 		this.imagePath = imagePath;
 	}
 
+	// Getters and setters
 	public String getName() {
 		return name;
 	}
@@ -52,13 +55,13 @@ public class SubCategory {
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
 	}
-    public ArrayBag<Catalog> getCatalogBag()
-    {
-        return catalogBag;
-    }
-    public void setCatalogueBag(ArrayBag<Catalog> catalogBag)
-    {
-        this.catalogBag = catalogBag;
-    }
+
+	public ArrayBag<Catalog> getCatalogBag() {
+		return catalogBag;
+	}
+
+	public void setCatalogueBag(ArrayBag<Catalog> catalogBag) {
+		this.catalogBag = catalogBag;
+	}
 
 }

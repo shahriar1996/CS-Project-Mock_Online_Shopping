@@ -14,11 +14,12 @@
 
 package edu.century.finalproject.shoppingcart.bean;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+
 import java.util.Date;
 
 public class Catalog {
+	
+	// Instance variables for products
 	private String name;
 	private String description;
 	private String imagePath;
@@ -28,7 +29,8 @@ public class Catalog {
 	private double price;
 	public final double PRODUCT_TAX = 0.07;
 	private Date availableDate;
-	private static SimpleDateFormat formatter=new SimpleDateFormat("MM dd");
+		
+	// Overloaded Constructor
 	public Catalog(String name, String description, String imagePath, String color, String size, String quantity,
 			String price, String availableDate) {
 		super();
@@ -39,16 +41,9 @@ public class Catalog {
 		this.size = size;
 		this.quantity = Integer.parseInt(quantity);
 		this.price = Double.valueOf(price);
-		try
-        {
-            this.availableDate = formatter.parse(availableDate);
-        }
-        catch (ParseException e)
-        {
-            this.availableDate = new Date();
-        }
 	}
 
+	// Getters and setters
 	public String getName() {
 		return name;
 	}
@@ -123,5 +118,4 @@ public class Catalog {
 				+ color + ", size=" + size + ", quantity=" + quantity + ", price=" + price + ", availableDate="
 				+ availableDate + "]";
 	}
-
 }
