@@ -8,7 +8,9 @@ import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +28,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.JTree;
 import javax.swing.border.LineBorder;
-
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeSelectionModel;
 
@@ -44,6 +47,7 @@ public class CSCIShoppingCartGui {
 	private ShoppingCartCollection shoppingCartCollection;
 	private DefaultListModel<String> shoppingCartListModel;
 	private JLabel totalAmountLbl;
+	private double totalAmount;
 	private JPanel currentPanel;
 	private JFrame frame;
 	private JTree tree;
@@ -76,7 +80,8 @@ public class CSCIShoppingCartGui {
 		JPanel jpnlTree = new JPanel();
 		this.tree = new JTree(root);
 		tree.getSelectionModel().setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
-
+		tree.addTreeSelectionListener(new ShoppingCartTreeSelectionListener(subCategoryPanelList, categoryCollection,
+				shoppingCartCollection));
 		jpnlTree.add(new JScrollPane(tree));
 		jpnlTree.setBackground(Color.LIGHT_GRAY);
 		jpnlTree.setSize(new Dimension(100, 500));
@@ -95,6 +100,7 @@ public class CSCIShoppingCartGui {
 		lblPurchase.setForeground(Color.darkGray);
 		JButton btnPurchase = new JButton("Purchase");
 		btnPurchase.setActionCommand("Purchase");
+		btnPurchase.addActionListener(new ShoppingCartPurchaseActionListener());
 		jpnlList.add(lblPurchase);
 
 		JScrollPane scrollPane = new JScrollPane(purchasedCatalog);
@@ -125,7 +131,7 @@ public class CSCIShoppingCartGui {
 		frame.getContentPane().setBackground(Color.WHITE);
 		frame.getContentPane().add(jpnlTree, BorderLayout.WEST);
 		frame.getContentPane().add(jpnlAmount, BorderLayout.PAGE_END);
-		frame.setSize(1850, 900);
+		frame.setSize(1450, 950);
 		frame.setVisible(true);
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -206,7 +212,9 @@ public class CSCIShoppingCartGui {
 
 		JComboBox<?> jcmbQty = new JComboBox<>(new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
 		catalog.setQuantity((Integer) jcmbQty.getSelectedItem());
+		jcmbQty.addActionListener(new ShoppingCartListener(catalog));
 
+		jchkBoxHpLap.addItemListener(new ShoppingCartCheckBoxListener(catalog, shoppingCartCollection));
 
 		panelProduct.add(label, BorderLayout.NORTH);
 		panelProduct.add(lblDescription, BorderLayout.NORTH);
@@ -303,13 +311,28 @@ public class CSCIShoppingCartGui {
 
 		void updateShoppingCartList(ArrayBag<Catalog> shoppingCartBag) {
 			shoppingCartListModel.clear();
+			double subTotalAmt = 0.0;
 			double totalAmt = 0.0;
+			double tax = 0;
+			
+			DecimalFormat df = new DecimalFormat("#.###"); 
+			
 			for (int i = 0; i < shoppingCartBag.size(); i++) {
 				Catalog cg = shoppingCartBag.get(i);
-				shoppingCartListModel.addElement(cg.getName() + " " + cg.getPrice() + " x " + cg.getQuantity());
-				totalAmt += cg.getPrice() * cg.getQuantity();
+				shoppingCartListModel.addElement(cg.getName() + " : $" + cg.getPrice() + " x " + cg.getQuantity());
+
+				
+				subTotalAmt = cg.getPrice() * cg.getQuantity();
+				tax = subTotalAmt * cg.PRODUCT_TAX;
+				String taxFormatted = df.format(tax); 			
+
+				totalAmt += subTotalAmt + tax;
+				
+				shoppingCartListModel.addElement("Product Tax: $" + taxFormatted);
+				shoppingCartListModel.addElement("-----------------------------------------------");
 			}
-			totalAmountLbl.setText("Total Amount : " + totalAmt);
+			String totalFormatted = df.format(totalAmt); 	
+			totalAmountLbl.setText("Total Amount : $" + totalFormatted);
 			totalAmount = totalAmt;
 		}
 	}
@@ -356,11 +379,73 @@ public class CSCIShoppingCartGui {
 					currentPanel.add(jPanel);
 					currentPanel.invalidate();
 					currentPanel.validate();
-					frame.setSize(1250, 901);
+					currentPanel.revalidate();
+					currentPanel.repaint();
 					break;
 				}
 			}
 		}
 	}
 
+	/**
+	 * purchase listener - after clicking purchase button
+	 *
+	 */
+	private class ShoppingCartPurchaseActionListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+
+			if (e.getActionCommand().equals("Purchase")) {
+				if (!shoppingCartListModel.isEmpty()) {
+					String[] obj = { "Pay", "Back" };
+					String[] pay = { "Credit Card", "Cash" };
+					int showOptionObj = JOptionPane.showOptionDialog(null, "Please, select your Option", "Option",
+							JOptionPane.YES_NO_OPTION, JOptionPane.OK_OPTION, null, obj, obj[0]);
+					boolean isback = false;
+
+					switch (showOptionObj) {
+					case 0:
+						frame.setVisible(true);
+						JOptionPane.showMessageDialog(null, "<html> <b>Your Amount is " + totalAmount + "</b></html>");
+						break;
+					case 1:
+						frame.setVisible(true);
+						isback = true;
+						break;
+					default:
+						System.exit(0);
+					}
+
+					if (!isback) {
+						int showOptionPay = JOptionPane.showOptionDialog(null, "Please, select Payment Method",
+								"Payment", JOptionPane.YES_NO_OPTION, JOptionPane.OK_OPTION, null, pay, pay[0]);
+
+						switch (showOptionPay) {
+						case 0:
+							frame.setVisible(true);
+							JOptionPane.showInputDialog(null, "Enter Credit Card Number", "PayPal",
+									JOptionPane.PLAIN_MESSAGE);
+							JOptionPane.showMessageDialog(null,
+									"Thank You! your items will be deliverd with in next two working days.", "Credited",
+									JOptionPane.INFORMATION_MESSAGE);
+							System.exit(0);
+							break;
+						case 1:
+							frame.setVisible(true);
+							JOptionPane.showMessageDialog(null,
+									"Thank You! your items will be deliverd with in next two working days.", "Receipt",
+									JOptionPane.INFORMATION_MESSAGE);
+							System.exit(0);
+							break;
+						default:
+							System.exit(0);
+						}
+					}
+				} else {
+					JOptionPane.showMessageDialog(null, "Your Cart is Empty, Please select items to purchase",
+							"Empty Cart", JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		}
+
+	}
 }

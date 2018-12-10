@@ -12,6 +12,7 @@ public class Catalog {
 	private String size;
 	private int quantity;
 	private double price;
+	public final double PRODUCT_TAX = 0.07;
 	private Date availableDate;
 	private static SimpleDateFormat formatter=new SimpleDateFormat("MM dd");
 	public Catalog(String name, String description, String imagePath, String color, String size, String quantity,
@@ -90,6 +91,10 @@ public class Catalog {
 		this.price = price;
 	}
 
+	public double getPRODUCT_TAX() {
+		return getPrice() * getQuantity() * PRODUCT_TAX;
+	}
+	
 	public Date getAvailableDate() {
 		return availableDate;
 	}
