@@ -2,6 +2,10 @@ package edu.century.finalproject.shoppingcart.search;
 
 public class BinaryStringSearch {
 
+	/**
+	 * BubbleSort is used to sort String Array
+	 * @param stringArray
+	 */
 	public static void bubbleSort(String[] stringArray) {
 		int n = stringArray.length;
 		String temp;
@@ -16,6 +20,12 @@ public class BinaryStringSearch {
 		}
 	}
 
+	/**
+	 * This method will sort string array using bubble sort and pass it to binary search to search for value string
+	 * @param words
+	 * @param value
+	 * @return
+	 */
 	public static int binarySearch(String[] words, String value) {
 		bubbleSort(words);
 		return binarySearch(words, value, 0, words.length - 1);
@@ -24,6 +34,10 @@ public class BinaryStringSearch {
 	/**
 	 * Searches an array of words for a given value using a recursive binary search.
 	 * Returns the index that contains the value or -1 if the value is not found.
+	 * 
+	 * @param words
+	 * @param value
+	 * @return
 	 */
 	private static int binarySearch(String[] words, String value, int min, int max) {
 		if (min > max) {
