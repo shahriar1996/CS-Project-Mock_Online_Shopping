@@ -276,4 +276,91 @@ public class CSCIShoppingCartGui {
 		}
 
 	}
+	
+	/**
+	 * Shopping Cart checkbox Listener -- adds to cart 
+	 *
+	 */
+
+	private class ShoppingCartCheckBoxListener implements ItemListener {
+
+		Catalog catalog;
+		ShoppingCartCollection shoppingCartCollection;
+
+		ShoppingCartCheckBoxListener(Catalog catalog, ShoppingCartCollection shoppingCartCollection) {
+			this.catalog = catalog;
+			this.shoppingCartCollection = shoppingCartCollection;
+		}
+
+		public void itemStateChanged(ItemEvent e) {
+			if (e.getStateChange() == ItemEvent.SELECTED) {
+				shoppingCartCollection.getShoppingCartBag().add(catalog);
+			} else {
+				shoppingCartCollection.getShoppingCartBag().remove(catalog);
+			}
+			this.updateShoppingCartList(shoppingCartCollection.getShoppingCartBag());
+		}
+
+		void updateShoppingCartList(ArrayBag<Catalog> shoppingCartBag) {
+			shoppingCartListModel.clear();
+			double totalAmt = 0.0;
+			for (int i = 0; i < shoppingCartBag.size(); i++) {
+				Catalog cg = shoppingCartBag.get(i);
+				shoppingCartListModel.addElement(cg.getName() + " " + cg.getPrice() + " x " + cg.getQuantity());
+				totalAmt += cg.getPrice() * cg.getQuantity();
+			}
+			totalAmountLbl.setText("Total Amount : " + totalAmt);
+			totalAmount = totalAmt;
+		}
+	}
+
+	/**
+	 * updates quantity
+	 *
+	 */
+	private class ShoppingCartListener implements ActionListener {
+		Catalog catalog;
+
+		ShoppingCartListener(Catalog catalog) {
+			this.catalog = catalog;
+		}
+
+		public void actionPerformed(ActionEvent e) {
+			JComboBox jcmbQty = (JComboBox) e.getSource();
+			catalog.setQuantity((Integer) jcmbQty.getSelectedItem());
+		}
+	}
+
+	/**
+	 * left nav tree selection listener
+	 *
+	 */
+	private class ShoppingCartTreeSelectionListener implements TreeSelectionListener {
+
+		List<JPanel> subCategoryPanelList;
+		ShoppingCartCollection shoppingCartCollection;
+		CategoryCollection categoryCollection;
+
+		ShoppingCartTreeSelectionListener(List<JPanel> subCategoryPanelList, CategoryCollection categoryCollection,
+				ShoppingCartCollection shoppingCartCollection) {
+			this.subCategoryPanelList = subCategoryPanelList;
+			this.categoryCollection = categoryCollection;
+			this.shoppingCartCollection = shoppingCartCollection;
+		}
+
+		public void valueChanged(TreeSelectionEvent e) {
+			for (JPanel jPanel : subCategoryPanelList) {
+				if (tree.getLastSelectedPathComponent().toString().trim().equals(jPanel.getName().trim())) {
+					currentPanel.removeAll();
+					currentPanel.add(getSearchPanel(categoryCollection, shoppingCartCollection), BorderLayout.CENTER);
+					currentPanel.add(jPanel);
+					currentPanel.invalidate();
+					currentPanel.validate();
+					frame.setSize(1250, 901);
+					break;
+				}
+			}
+		}
+	}
+
 }
