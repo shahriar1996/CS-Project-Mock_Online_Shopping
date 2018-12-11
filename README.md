@@ -38,4 +38,4 @@ STEP 3:
 
 **Driver class** - *by Arif Shahriar*
   
-	Driver class contains the main mehtod of the project. I imported all the packages in the Driver class to make it work. The class itself reads all the csv file line by line and split each cell of the excel by comma. I set the instance of category, subcategory, and catalog in to the arrays. Each array represents each row in the csv file.
+	Driver class contains the main method of the project. I imported all the packages in the Driver class to make it work. The class itself reads all the csv file line by line and split each cell of the excel by comma. I set the instance of category, sub-category, and catalog in to the arrays. Each array represents each row in the csv file.
