@@ -19,13 +19,25 @@ public class ArrayBag<E> implements Cloneable
     private Object[] data;
     private int manyItems;
 
+/**public ArrayBag()
+ * Precondition:
+ * Postcondition:
+ * 
+ */
     public ArrayBag()
     {
         final int INITIAL_CAPACITY = 10;
         manyItems = 0;
         data = new Object[INITIAL_CAPACITY];
     }
-
+    
+    /**
+     * public ArrayBag(int initialCapacity)
+     * @param initialCapacity
+     * Precondition:
+     * Postcondition:
+     * Throws:
+     */
     public ArrayBag(int initialCapacity)
     {
         if (initialCapacity < 0)
@@ -33,7 +45,13 @@ public class ArrayBag<E> implements Cloneable
         data = new Object[initialCapacity];
         manyItems = 0;
     }
-
+    /**
+     * public void add(E element)
+     * Description: Ensures Capacity of the array
+     * @param element
+     * Precondition:
+     * Postcondition:
+     */ 
     public void add(E element)
     {
         if (manyItems == data.length)
@@ -44,19 +62,34 @@ public class ArrayBag<E> implements Cloneable
         data[manyItems] = element;
         manyItems++;
     }
-
+    
+    /**
+     *  public void addAll(ArrayBag<E> addend)
+     * Description:
+     * @param addend
+     * Precondition:
+     * Postcondition:
+     * Throws: If addend is null, then a NullPointerException is thrown.
+     * In the case that the total number of items is beyond
+     * Integer.MAX_VALUE, there will be an arithmetic overflow and
+     * the bag will fail.
+     */
     public void addAll(ArrayBag<E> addend)
     {
-        // If addend is null, then a NullPointerException is thrown.
-        // In the case that the total number of items is beyond
-        // Integer.MAX_VALUE, there will be an arithmetic overflow and
-        // the bag will fail.
         ensureCapacity(manyItems + addend.manyItems);
 
         System.arraycopy(addend.data, 0, data, manyItems, addend.manyItems);
         manyItems += addend.manyItems;
     }
 
+    	/**
+    	 *  public ArrayBag<E> clone()
+    	 *  Description:
+    	 *  Precondition:
+    	 *  Postcondition:
+    	 *  Throws:RuntimeException
+    	 *  
+    	 */
     @SuppressWarnings("unchecked")
     public ArrayBag<E> clone()
     { // Clone an ArrayBag object.
@@ -77,7 +110,14 @@ public class ArrayBag<E> implements Cloneable
         answer.data = data.clone();
         return answer;
     }
-
+    
+    /**
+     * public int countOccurrences(E target)
+     * Postcondition:
+     * Precondition:
+     * @param target
+     * @return: answer
+     */
     public int countOccurrences(E target)
     {
         int answer;
@@ -89,7 +129,14 @@ public class ArrayBag<E> implements Cloneable
                 answer++;
         return answer;
     }
-
+    
+    /**
+     * public void ensureCapacity(int minimumCapacity)
+     * Description: Creates a larger array as needed
+     * Precondition:
+     * Postcondition:
+     * @param minimumCapacity
+     */
     public void ensureCapacity(int minimumCapacity)
     {
         Object biggerArray[];
@@ -101,12 +148,26 @@ public class ArrayBag<E> implements Cloneable
             data = biggerArray;
         }
     }
-
+    /**
+     *  public int getCapacity()
+     *  Description:
+     *  Postcondition:
+     *  Precondition:
+     * @return data.length
+     */
     public int getCapacity()
     {
         return data.length;
     }
 
+    /**
+     *  public E grab()
+     *  Description:
+     *  Postcondition:
+     *  Precondition:
+     *  
+     * @return
+     */
     @SuppressWarnings("unchecked")
     public E grab()
     {
@@ -119,6 +180,14 @@ public class ArrayBag<E> implements Cloneable
         return (E) data[i];
     }
 
+    /**
+     *  public boolean remove(E target)
+     *  Description:
+     *  Precondition:
+     *  Postcondition:
+     * @param target
+     * @return: true
+     */
     public boolean remove(E target)
     {
         int index; // The location of target in the data array.
@@ -152,11 +221,25 @@ public class ArrayBag<E> implements Cloneable
         }
     }
 
+    /**
+     * public int size()
+     * Description:
+     * Precondition:
+     * Postcondition:
+     * 
+     * @return
+     */
     public int size()
     {
         return manyItems;
     }
 
+    /**
+     *  public void trimToSize()
+     *  Description:
+     *  Precondition:
+     *  Postcondition:
+     */
     public void trimToSize()
     {
         Object[] trimmedArray;
@@ -169,6 +252,13 @@ public class ArrayBag<E> implements Cloneable
         }
     }
 
+    /**
+     * public E get(final int index)
+     * Description:
+     * Precondition:
+     * @param index
+     * @return: answer
+     */
     @SuppressWarnings("unchecked")
     public E get(final int index)
     {
@@ -178,6 +268,15 @@ public class ArrayBag<E> implements Cloneable
         }
         return (E) this.data[index];
     }
+    /**
+     * public static <E> ArrayBag<E> union(ArrayBag<E> b1, ArrayBag<E> b2)
+     * Description:
+     * Precondition:
+     * Postcondition:
+     * @param b1
+     * @param b2
+     * @return: answer
+     */
     public static <E> ArrayBag<E> union(ArrayBag<E> b1, ArrayBag<E> b2)
     {
         // If either b1 or b2 is null, then a NullPointerException is thrown.
