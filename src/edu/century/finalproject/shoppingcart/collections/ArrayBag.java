@@ -20,8 +20,9 @@ public class ArrayBag<E> implements Cloneable
     private int manyItems;
 
 /**public ArrayBag()
- * Precondition:
- * Postcondition:
+ * Description: Creates an array to hold products
+ * given an initial capacity of 10
+ * Postcondition:Stored up to 10 products initially
  * 
  */
     public ArrayBag()
@@ -33,10 +34,11 @@ public class ArrayBag<E> implements Cloneable
     
     /**
      * public ArrayBag(int initialCapacity)
+     * 
      * @param initialCapacity
-     * Precondition:
-     * Postcondition:
-     * Throws:
+     * Precondition: Ensures initialCapacity is > 0
+     * Postcondition: Store product data into the ARRAY
+     * Throws: if (initialCapacity < 0) than throws  IllegalArgumentException
      */
     public ArrayBag(int initialCapacity)
     {
@@ -49,8 +51,9 @@ public class ArrayBag<E> implements Cloneable
      * public void add(E element)
      * Description: Ensures Capacity of the array
      * @param element
-     * Precondition:
-     * Postcondition:
+     * Precondition:This method will first ensure the capacity of the array, 
+     * then go to the array to add the products in the arraylist
+     * Postcondition: After the method is called products will be added into the arrayList
      */ 
     public void add(E element)
     {
@@ -65,10 +68,10 @@ public class ArrayBag<E> implements Cloneable
     
     /**
      *  public void addAll(ArrayBag<E> addend)
-     * Description:
+     * Description: adda contents from collection to the other
      * @param addend
-     * Precondition:
-     * Postcondition:
+     * Precondition:addend is not null
+     * Postcondition: items are added successfully
      * Throws: If addend is null, then a NullPointerException is thrown.
      * In the case that the total number of items is beyond
      * Integer.MAX_VALUE, there will be an arithmetic overflow and
@@ -84,15 +87,19 @@ public class ArrayBag<E> implements Cloneable
 
     	/**
     	 *  public ArrayBag<E> clone()
-    	 *  Description:
-    	 *  Precondition:
-    	 *  Postcondition:
+    	 *  Description:Clone an arrayBag object
+    	 *  
+    	 *  Postcondition: makes a clone of the data array
     	 *  Throws:RuntimeException
+    	 *   // This exception should not occur. But if it does, it would probably
+         * indicate a programming error that made super.clone unavailable.
+         * The most common error would be forgetting the "Implements Cloneable"
+         * clause at the start of this class.
     	 *  
     	 */
     @SuppressWarnings("unchecked")
     public ArrayBag<E> clone()
-    { // Clone an ArrayBag object.
+    { 
         ArrayBag<E> answer;
 
         try
@@ -113,12 +120,11 @@ public class ArrayBag<E> implements Cloneable
     
     /**
      * public int countOccurrences(E target)
-     * Postcondition:
-     * Precondition:
+     * Description: Looking for the same item in the arraybag.
      * @param target
-     * @return: answer
+     * Postcondition: Return the number of the same prodpuct in the arraybag.
      */
-    public int countOccurrences(E target)
+    public int countOfccurrences(E target)
     {
         int answer;
         int index;
@@ -133,9 +139,9 @@ public class ArrayBag<E> implements Cloneable
     /**
      * public void ensureCapacity(int minimumCapacity)
      * Description: Creates a larger array as needed
-     * Precondition:
-     * Postcondition:
      * @param minimumCapacity
+     * Precondition: The method double the size of of an array to avoid arrayOutOfBound exception.
+     * Postcondition: This method will double the size of the arraylist.
      */
     public void ensureCapacity(int minimumCapacity)
     {
@@ -150,9 +156,6 @@ public class ArrayBag<E> implements Cloneable
     }
     /**
      *  public int getCapacity()
-     *  Description:
-     *  Postcondition:
-     *  Precondition:
      * @return data.length
      */
     public int getCapacity()
@@ -162,11 +165,10 @@ public class ArrayBag<E> implements Cloneable
 
     /**
      *  public E grab()
-     *  Description:
-     *  Postcondition:
-     *  Precondition:
+     *  Description:Checks to make sure bag is not empty
+     *  Precondition:Same
      *  
-     * @return
+     * @return: data
      */
     @SuppressWarnings("unchecked")
     public E grab()
@@ -182,11 +184,10 @@ public class ArrayBag<E> implements Cloneable
 
     /**
      *  public boolean remove(E target)
-     *  Description:
-     *  Precondition:
-     *  Postcondition:
+     *  Description: Removes target from the collection
+     *  Postcondition:Reomoves the item if found
      * @param target
-     * @return: true
+     * @return: true if found false if not
      */
     public boolean remove(E target)
     {
@@ -223,11 +224,8 @@ public class ArrayBag<E> implements Cloneable
 
     /**
      * public int size()
-     * Description:
-     * Precondition:
-     * Postcondition:
      * 
-     * @return
+     * @return size
      */
     public int size()
     {
@@ -236,9 +234,8 @@ public class ArrayBag<E> implements Cloneable
 
     /**
      *  public void trimToSize()
-     *  Description:
-     *  Precondition:
-     *  Postcondition:
+     *  Description:trims array to size
+     *  Postcondition:The item in the collection has been chaged to the current size
      */
     public void trimToSize()
     {
@@ -254,10 +251,10 @@ public class ArrayBag<E> implements Cloneable
 
     /**
      * public E get(final int index)
-     * Description:
-     * Precondition:
+     * Description: This method is looking for a specific item
+     * Precondition:index is =>0
      * @param index
-     * @return: answer
+     * @return: this.data[index]
      */
     @SuppressWarnings("unchecked")
     public E get(final int index)
@@ -270,12 +267,12 @@ public class ArrayBag<E> implements Cloneable
     }
     /**
      * public static <E> ArrayBag<E> union(ArrayBag<E> b1, ArrayBag<E> b2)
-     * Description:
-     * Precondition:
-     * Postcondition:
+     * Description: This method combines both ArrayBags
+  	 * Preconditon: Both bags are not empty
+     * Postcondition: Both bags have merged into one
      * @param b1
      * @param b2
-     * @return: answer
+     * @return
      */
     public static <E> ArrayBag<E> union(ArrayBag<E> b1, ArrayBag<E> b2)
     {
