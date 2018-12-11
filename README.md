@@ -23,7 +23,7 @@ STEP 3:
 
 ---
 
-**Catalog, Category, and Subcategory** - *by Arif Shahriar*
+**Catalog, Category, and Subcategory classes and csv files** - *by Arif Shahriar*
 
 ---
 
@@ -33,11 +33,20 @@ and getters & setters.
 
 ---
 
-**Binary Search method** - *by Arif Shahriar*
+**Binary Search class** - *by Arif Shahriar*
 
 ---
 
 I have implemented binary search method in to the project to search for product by it's name. I used bubble sort to sort the array of
 products and implemented a recursive method for searching the product from the array.
+
+---
+
+**Driver clsas** - *by Arif Shahriar*
+
+---
+
+Driver class contains the main mehtod of the project. I imported all the packages in the Driver class to make it work.
+The class itself reads all the csv file line by line and split each cell of the excel by comma. I set the instance of category, subcategory, and catalog in to the arrays. Each array represents each row in the csv file.
 
 ---
