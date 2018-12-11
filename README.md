@@ -30,12 +30,12 @@ STEP 3:
 
 **Catalog, Category, and Subcategory classes and csv files** - *by Arif Shahriar*
   
-	category.csv contains the products name, subcatergory.csv contains the the product specifications, and catalog contains the details of the product. In the java file of category, sub-category, and catalog, it contains the instance variables for products classifications and getters & setters
+> category.csv contains the products name, subcatergory.csv contains the the product specifications, and catalog contains the details of the product. In the java file of category, sub-category, and catalog, it contains the instance variables for products classifications and getters & setters
 
 **Binary Search class** - *by Arif Shahriar*
   
-	I have implemented binary search method in to the project to search for product by it's name. I used bubble sort to sort the array of products and implemented a recursive method for searching the product from the array.
+> I have implemented binary search method in to the project to search for product by it's name. I used bubble sort to sort the array of products and implemented a recursive method for searching the product from the array.
 
 **Driver class** - *by Arif Shahriar*
   
-	Driver class contains the main method of the project. I imported all the packages in the Driver class to make it work. The class itself reads all the csv file line by line and split each cell of the excel by comma. I set the instance of category, sub-category, and catalog in to the arrays. Each array represents each row in the csv file.
+> Driver class contains the main method of the project. I imported all the packages in the Driver class to make it work. The class itself reads all the csv file line by line and split each cell of the excel by comma. I set the instance of category, sub-category, and catalog in to the arrays. Each array represents each row in the csv file.
