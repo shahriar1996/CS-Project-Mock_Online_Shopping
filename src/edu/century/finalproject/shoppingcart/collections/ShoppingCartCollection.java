@@ -35,8 +35,8 @@ public class ShoppingCartCollection
     }
 
     /*
-     * (non-Javadoc)
-     * @see java.lang.Object#toString()
+     * 
+     *Overloaded toString
      */
     @Override
     public String toString()
