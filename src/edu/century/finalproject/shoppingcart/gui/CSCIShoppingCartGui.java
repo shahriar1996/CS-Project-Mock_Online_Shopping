@@ -145,7 +145,7 @@ public class CSCIShoppingCartGui {
 		frame.getContentPane().setBackground(Color.WHITE);
 		frame.getContentPane().add(jpnlTree, BorderLayout.WEST);
 		frame.getContentPane().add(jpnlAmount, BorderLayout.PAGE_END);
-		frame.setSize(1450, 950);
+		frame.setSize(1350, 950);
 		frame.setVisible(true);
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

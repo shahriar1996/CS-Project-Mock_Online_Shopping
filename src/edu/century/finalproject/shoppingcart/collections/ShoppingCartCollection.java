@@ -35,7 +35,6 @@ public class ShoppingCartCollection
     }
 
     /*
-     * 
      *Overloaded toString
      */
     @Override
