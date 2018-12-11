@@ -65,7 +65,8 @@ public class CSCIShoppingCartGui {
 	private JPanel currentPanel;
 	private JFrame frame;
 	private JTree tree;
-
+	DecimalFormat df = new DecimalFormat("#.###"); 
+	
 	public CSCIShoppingCartGui(String title, CategoryCollection categoryCollection) {
 		this.title = title;
 		this.categoryCollection = categoryCollection;
@@ -329,7 +330,6 @@ public class CSCIShoppingCartGui {
 			double totalAmt = 0.0;
 			double tax = 0;
 			
-			DecimalFormat df = new DecimalFormat("#.###"); 
 			
 			for (int i = 0; i < shoppingCartBag.size(); i++) {
 				Catalog cg = shoppingCartBag.get(i);
@@ -419,7 +419,8 @@ public class CSCIShoppingCartGui {
 					switch (showOptionObj) {
 					case 0:
 						frame.setVisible(true);
-						JOptionPane.showMessageDialog(null, "<html> <b>Your Amount is " + totalAmount + "</b></html>");
+						String totalFormatted = df.format(totalAmount);
+						JOptionPane.showMessageDialog(null, "<html> <b>Your Amount is " + totalFormatted + "</b></html>");
 						break;
 					case 1:
 						frame.setVisible(true);

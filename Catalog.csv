@@ -1,29 +1,29 @@
 Name,Description,imagePath,color,size,quantity,price,availableDate,subCategory Name
-iPhone 8,Apple iPhone 8 GSM Unlocked <br/>  RAM: 3 GB SIZE: 64 GB <br/>,iphone8.png,Red/white/black,64 GB,15,699.99,11-Dec,Apple iPhones
-iPhone X,Apple iPhone X GSM Unlocked <br/>  RAM: 4 GB SIZE: 128 GB <br/>,iphoneX.png,Red/white/black,64 GB,15,999.99,11-Dec,Apple iPhones
-iPhone XS,Apple iPhone XS GSM Unlocked <br/>  RAM: 6 GB SIZE: 256 GB <br/>,iphoneXS.png,Red/white/black,64 GB,15,1100.99,11-Dec,Apple iPhones
-iPhone XR,Apple iPhone XR GSM Unlocked <br/>  RAM: 6 GB SIZE: 256 GB <br/>,iphoneXR.png,Red/white/black,64 GB,15,799.99,11-Dec,Apple iPhones
-J7 Prime,Samsung J7 Prime GSM Unlocked <br/>  RAM: 2 GB  SIZE: 32 GB <br/>,samsung.png,Red/white/black,64 GB,15,499.99,12-Dec,Samsung Phones
-Note 8,Samsung Note 8 GSM Unlocked <br/>  RAM: 6 GB  SIZE: 128 GB <br/>,samsung1.png,Red/white/black,64 GB,15,649.99,13-Dec,Samsung Phones
-Galaxy S9,Galaxy S9 GSM Unlocked <br/>  RAM: 6 GB  SIZE: 256 GB <br/>,samsung2.png,Red/white/black,64 GB,15,899.99,14-Dec,Samsung Phones
-Samsung A8,Samsung A8 GSM Unlocked <br/>  RAM: 4 GB  SIZE: 64 GB <br/>,samsung3.png,Red/white/black,64 GB,15,649.99,30-Nov,Samsung Phones
-Motorola G6,Motorola G6 GSM Unlocked <br/>  RAM: 4 GB  SIZE: 64 GB <br/>,moto.png,Red/white/black,64 GB,15,349.99,30-Nov,Motorola Phones
-Motorola Z2 Force,Moto Z2 force GSM Unlocked <br/>  RAM: 4 GB  SIZE: 256 GB <br/>,moto1.png,Red/white/black,65 GB,15,799.99,1-Dec,Motorola Phones
-Motorola X Style,Moto X Style GSM Unlocked <br/>  RAM: 3 GB  SIZE: 64 GB <br/>,moto2.png,Red/white/black,66 GB,15,299.99,2-Dec,Motorola Phones
-Motorola X2,Moto X2 GSM Unlocked <br/>  RAM: 2 GB  SIZE: 32 GB <br/>,moto3.png,Red/white/black,67 GB,15,149.99,3-Dec,Motorola Phones
-HTC One M9,HTC One M9 Unlocked <br/>  RAM: 2 GB  SIZE: 32 GB <br/>,htc.png,Red/white/black,64 GB,15,149.99,30-Nov,Htc Phones
-HTC One M8,HTC One M8 Unlocked <br/>  RAM: 3 GB  SIZE: 32 GB <br/>,htc1.png,Red/white/black,65 GB,15,99.99,1-Dec,Htc Phones
-HTC Desire,HTC Desire Unlocked <br/>  RAM: 2 GB  SIZE: 16 GB <br/>,htc2.png,Red/white/black,66 GB,15,249.99,2-Dec,Htc Phones
-HTC Desire Eye E1,Desire Eye E1 Unlocked <br/>  RAM: 3 GB  SIZE: 128 GB <br/>,htc3.png,Red/white/black,67 GB,15,169.99,3-Dec,Htc Phones
-MacBook Air 13',13' Inch Retina display <br/> 1.6 GHz dual core intel core i5 <br/>,mac.png,Red/white/black,4.0GB,10,1069.99,1-Dec,Apple Laptop
-MacBook Pro,15' Inch Retina display <br/> 2.2 GHz dual core intel core i7 <br/>,mac1.png,Red/white/black,4.0GB,10,899.99,2-Dec,Apple Laptop
-MacBook Air 13',15' Inch Retina display <br/> 2.9 GHz dual core intel core i9 <br/>,mac2.png,Red/white/black,4.0GB,10,3045.69,3-Dec,Apple Laptop
-Dell XPS 15 2 in 1,15' Inch Retina display <br/> 2.2 GHz dual core intel core i5 <br/>,dell.png,Red/white/black,4.0GB,10,1299.99,4-Dec,Dell Laptop
-Dell Inspiron 1700,14' Inch Retina display <br/> 2.2 GHz dual core intel core i7 <br/>,dell1.png,Red/white/black,4.0GB,10,799.99,5-Dec,Dell Laptop
-Dell XPS 15,15' Inch Retina display <br/> 2.4 GHz dual core intel core i7 <br/>,dell2.png,Red/white/black,4.0GB,10,1369.99,6-Dec,Dell Laptop
-HP Spectre,15' Inch Touchscreen display <br/> 2.6 GHz dual core intel core i7 <br/>,hp.png,Red/white/black,4.0GB,10,1249.99,7-Dec,HP Laptop
-HP Envy,15' Inch Retina  display <br/> 2.4 GHz dual core intel core i5 <br/>,hp1.png,Red/white/black,4.0GB,10,749.99,8-Dec,HP Laptop
-HP Pavillion,15' Inch Retina display <br/> 3.1 GHz dual core intel core i3 <br/>,hp2.png,Red/white/black,4.0GB,10,549.99,9-Dec,HP Laptop
-Flash Drive,Enfrain 16 GB Flash Drive 2 Packs,acs1.png,Red/white/black,4.0GB,40,10.99,15-Dec,Accessories
+iPhone 8,Apple iPhone 8 GSM Unlocked <br/>  RAM: 3 GB | SIZE: 64 GB <br/>,iphone8.png,Red/white/black,64 GB,15,699.99,11-Dec,Apple iPhones
+iPhone X,Apple iPhone X GSM Unlocked <br/>  RAM: 4 GB | SIZE: 128 GB <br/>,iphoneX.png,Red/white/black,64 GB,15,999.99,11-Dec,Apple iPhones
+iPhone XS,Apple iPhone XS GSM Unlocked <br/>  RAM: 6 GB | SIZE: 256 GB <br/>,iphoneXS.png,Red/white/black,64 GB,15,1100.99,11-Dec,Apple iPhones
+iPhone XR,Apple iPhone XR GSM Unlocked <br/>  RAM: 6 GB | SIZE: 256 GB <br/>,iphoneXR.png,Red/white/black,64 GB,15,799.99,11-Dec,Apple iPhones
+Samsung J7 Prime,Samsung J7 Prime GSM Unlocked <br/>  RAM: 2 GB  | SIZE: 32 GB <br/>,samsung.png,Red/white/black,64 GB,15,499.99,12-Dec,Samsung Phones
+Samsung Note 8,Samsung Note 8 GSM Unlocked <br/>  RAM: 6 GB  | SIZE: 128 GB <br/>,samsung1.png,Red/white/black,64 GB,15,649.99,13-Dec,Samsung Phones
+Samsung Galaxy S9,Galaxy S9 GSM Unlocked <br/>  RAM: 6 GB  | SIZE: 256 GB <br/>,samsung2.png,Red/white/black,64 GB,15,899.99,14-Dec,Samsung Phones
+Samsung A8,Samsung A8 GSM Unlocked <br/>  RAM: 4 GB  | SIZE: 64 GB <br/>,samsung3.png,Red/white/black,64 GB,15,649.99,30-Nov,Samsung Phones
+Motorola G6,Motorola G6 GSM Unlocked <br/>  RAM: 4 GB  | SIZE: 64 GB <br/>,moto.png,Red/white/black,64 GB,15,349.99,30-Nov,Motorola Phones
+Motorola Z2 Force,Moto Z2 force GSM Unlocked <br/>  RAM: 4 GB  | SIZE: 256 GB <br/>,moto1.png,Red/white/black,65 GB,15,799.99,1-Dec,Motorola Phones
+Motorola X Style,Moto X Style GSM Unlocked <br/>  RAM: 3 GB  | SIZE: 64 GB <br/>,moto2.png,Red/white/black,66 GB,15,299.99,2-Dec,Motorola Phones
+Motorola X2,Moto X2 GSM Unlocked <br/>  RAM: 2 GB  | SIZE: 32 GB <br/>,moto3.png,Red/white/black,67 GB,15,149.99,3-Dec,Motorola Phones
+HTC One M9,HTC One M9 Unlocked <br/>  RAM: 2 GB  | SIZE: 32 GB | <br/>,htc.png,Red/white/black,64 GB,15,149.99,30-Nov,Htc Phones
+HTC One M8,HTC One M8 Unlocked <br/>  RAM: 1 GB  | SIZE: 16 GB | <br/>,htc1.png,Red/white/black,65 GB,15,199.99,1-Dec,Htc Phones
+HTC Desire,HTC Desire Unlocked <br/>  RAM: 2 GB | SIZE: 16 GB | <br/>,htc2.png,Red/white/black,66 GB,15,249.99,2-Dec,Htc Phones
+HTC Desire Eye E1,Desire Eye E1 Unlocked <br/>  RAM: 3 GB  SIZE: 128 GB | <br/>,htc3.png,Red/white/black,67 GB,15,169.99,3-Dec,Htc Phones
+MacBook Air 13',13' Inch Retina display | <br/> 1.6 GHz dual core intel core i5 | <br/> 8GB RAM | 128 SSD <br/> Space Gray (Latest Model),mac.png,Red/white/black,4.0GB,10,1069.99,1-Dec,Apple Laptop
+MacBook Pro,15' Inch Retina display | <br/> 2.2 GHz dual core intel core i7 | <br/> 8 GB RAM | 256 SSD <br/> Black (Latest Model),mac1.png,Red/white/black,4.0GB,10,899.99,2-Dec,Apple Laptop
+MacBook Air 15',15' Inch Retina display | <br/> 2.9 GHz dual core intel core i9 | <br/> 16GB RAM | 256 Hard Drive <br/> Intel Pro Graphics,mac2.png,Red/white/black,4.0GB,10,3045.69,3-Dec,Apple Laptop
+Dell XPS 15 2 in 1,15' Inch Retina display | <br/> 2.2 GHz dual core intel core i5  | <br/> 8 GB RAM | 512 SSD | <br/> InfinityEdge Touch Display,dell.png,Red/white/black,4.0GB,10,1299.99,4-Dec,Dell Laptop
+Dell Inspiron 1500,14' Inch Retina display | <br/> 2.2 GHz dual core intel core i7 | <br/> 8 GB DDR4 | 1TB HDD | <br/> Bluethooth 4.2 | Windows 10,dell1.png,Red/white/black,4.0GB,10,799.99,5-Dec,Dell Laptop
+Dell XPS 15,15' Inch Retina display | <br/> 2.4 GHz dual core intel core i7 | <br/> 8 GB | RAM 256 SSD  | <br/> GeForce GTX 1050Ti,dell2.png,Red/white/black,4.0GB,10,1369.99,6-Dec,Dell Laptop
+HP Spectre,15' Inch Touchscreen display | <br/> 2.6 GHz dual core intel core i7 | <br/> 8550 NVIDIA MX 150 | <br/> Uptop 32 DDR4 1TB PCLe SSD,hp.png,Red/white/black,4.0GB,10,1249.99,7-Dec,HP Laptop
+HP Envy,15' Inch Retina  display | <br/> 2.4 GHz dual core intel core i5 | <br/> 16 GB RAM | 1 TB HDD <br/> | Silver Pen Not Included,hp1.png,Red/white/black,4.0GB,10,749.99,8-Dec,HP Laptop
+HP Pavillion,15' Inch Retina display | <br/> 3.1 GHz dual core intel core i3 | <br/> 8GB RAM | 512 GB HDD <br/> Bluetooth | DVDRW | Windows 10,hp2.png,Red/white/black,4.0GB,10,549.99,9-Dec,HP Laptop
+Flash Drive,Enfrain 16 GB Flash Drive Memory <br/> Stick Thumb Drive 2 packs,acs1.png,Red/white/black,4.0GB,40,10.99,15-Dec,Accessories
 Headphone,COWIN E7 Active <br/> Noise Cancelling Headphone <br/>,acs2.png,Red/white/black,4.0GB,40,59.99,16-Dec,Accessories
 Mouse,2.4G Ergonomic Wireless Mouse <br/> with USB Nano Receiver for laptop <br/>,acs3.png,Red/white/black,4.0GB,40,19.99,17-Dec,Accessories
