@@ -21,6 +21,7 @@ public class SubCategory {
 	private String name;
 	private String description;
 	private String imagePath;
+
 	private ArrayBag<Catalog> catalogBag = new ArrayBag<>();
 
 	// Overloaded constructor

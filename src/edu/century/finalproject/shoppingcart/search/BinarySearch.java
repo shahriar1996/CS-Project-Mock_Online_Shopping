@@ -14,17 +14,20 @@
 
 package edu.century.finalproject.shoppingcart.search;
 
-public class BinaryStringSearch {
+public class BinarySearch {
 
 	/**
-	 * BubbleSort is used to sort String Array
+	 * Description: BubbleSort is used to sort String Array
 	 * @param stringArray
+	 * Postcondition: Sorting the string array from it's lowest
+	 * value to the largest value
 	 */
+	
 	public static void bubbleSort(String[] stringArray) {
-		int n = stringArray.length;
+		int line = stringArray.length;
 		String temp;
-		for (int i = 0; i < n; i++) {
-			for (int j = 1; j < (n - i); j++) {
+		for (int i = 0; i < line; i++) {
+			for (int j = 1; j < (line - i); j++) {
 				if (stringArray[j - 1].compareTo(stringArray[j]) > 0) {
 					temp = stringArray[j - 1];
 					stringArray[j - 1] = stringArray[j];
@@ -46,14 +49,13 @@ public class BinaryStringSearch {
 	}
 
 	/**
-	 * Searches an array of words for a given value using a recursive binary search.
-	 * Returns the index that contains the value or -1 if the value is not found.
-	 * 
+	 * Description: Searches an array of words for a given value using a recursive binary search.
 	 * @param words
 	 * @param value
-	 * @return
+	 * Postcondition: Returns the index that contains the value or -1 if the value is not found.
 	 */
 	private static int binarySearch(String[] words, String value, int min, int max) {
+	
 		if (min > max) {
 			return -1;
 		}

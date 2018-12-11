@@ -53,7 +53,7 @@ import edu.century.finalproject.shoppingcart.bean.SubCategory;
 import edu.century.finalproject.shoppingcart.collections.ArrayBag;
 import edu.century.finalproject.shoppingcart.collections.CategoryCollection;
 import edu.century.finalproject.shoppingcart.collections.ShoppingCartCollection;
-import edu.century.finalproject.shoppingcart.search.BinaryStringSearch;
+import edu.century.finalproject.shoppingcart.search.BinarySearch;
 
 public class CSCIShoppingCartGui {
 	private String title;
@@ -269,7 +269,7 @@ public class CSCIShoppingCartGui {
 							Catalog catalog = subCategory.getCatalogBag().get(k);
 							String searchTxt = searchTxtF.getText().toLowerCase().trim();
 							String[] names = catalog.getName().toLowerCase().split(" ");
-							if (BinaryStringSearch.binarySearch(names,searchTxt) >= 0 || 
+							if (BinarySearch.binarySearch(names,searchTxt) >= 0 || 
 									catalog.getName().toLowerCase().contains(searchTxt)) {
 								catalogBag.add(catalog);
 							}

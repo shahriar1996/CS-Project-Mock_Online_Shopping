@@ -23,6 +23,7 @@ public class Category
     private String name;
     private String description;
     private String imagePath;
+  
     private ArrayBag<SubCategory> subcategoryBag = new ArrayBag<>();
 
     // Overloaded Constructor
