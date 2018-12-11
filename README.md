@@ -16,9 +16,12 @@ STEP 2: Our group decided to make an Online Shopping Cart project where we will 
 
 STEP 3:
 •	For this project we will have three collection packages (phoneCollection,laptopCollection & accessoriesCollection) and one ShoppingCart package.
+
 •	In ShoppingCart package we will have two classes, Driver Class and OnlineCart Class. Driver class will be our main class to run the
-•	Program and in OnlineCart class we will inplement our Gui for all the collectionpackeages.
+•	Program and in OnlineCart class we will implement our Gui for all the collectionPackeages.
+
 •	In other three packages we will design our phones laptops and accessories to how it will look like.
+
 •	We are planning to use arraylist and queue for our project.
 
 ---
@@ -27,16 +30,12 @@ STEP 3:
 
 **Catalog, Category, and Subcategory classes and csv files** - *by Arif Shahriar*
   
-> category.csv contains the products name, subcatergory.csv contains the the product specifications, and catalog contains the details
-of the product. In the java file of category, subcategory, and catalog, it contains the instance cariables for products classifications
-and getters & setters
+	category.csv contains the products name, subcatergory.csv contains the the product specifications, and catalog contains the details of the product. In the java file of category, sub-category, and catalog, it contains the instance variables for products classifications and getters & setters
 
 **Binary Search class** - *by Arif Shahriar*
   
-> I have implemented binary search method in to the project to search for product by it's name. I used bubble sort to sort the array of
-products and implemented a recursive method for searching the product from the array.
+	I have implemented binary search method in to the project to search for product by it's name. I used bubble sort to sort the array of products and implemented a recursive method for searching the product from the array.
 
 **Driver clsas** - *by Arif Shahriar*
   
-> Driver class contains the main mehtod of the project. I imported all the packages in the Driver class to make it work.
-The class itself reads all the csv file line by line and split each cell of the excel by comma. I set the instance of category, subcategory, and catalog in to the arrays. Each array represents each row in the csv file.
+	Driver class contains the main mehtod of the project. I imported all the packages in the Driver class to make it work. The class itself reads all the csv file line by line and split each cell of the excel by comma. I set the instance of category, subcategory, and catalog in to the arrays. Each array represents each row in the csv file.
