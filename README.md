@@ -23,6 +23,10 @@ STEP 3:
 
 ---
 
+# Documentation for Group Project
+
+---
+
 **Catalog, Category, and Subcategory classes and csv files** - *by Arif Shahriar*
 
 ---
