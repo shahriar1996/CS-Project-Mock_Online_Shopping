@@ -6,7 +6,7 @@
 
 **Due Date: 11-Dec-2018**
 
-STEP 1: Group: Arif Shahriar, Alvin Madison, and Mohammed Safwat.
+STEP 1: Contributers: Arif Shahriar, Alvin Madison, and Mohammed Safwat.
 
 ----
 
